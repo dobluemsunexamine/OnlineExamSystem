@@ -27,7 +27,7 @@
 
 ## 前后台应用技术
 
->后端：idea tomcat mysql spring—mvc mybatis
+>后端：idea maven tomcat8 mysql5.7 spring spring—mvc mybatis
 >前端：html css jquery 
 
 ## 项目结构图
@@ -39,3 +39,5 @@
 ```
 
 ## 注意事项
+
+1.本项目中数据库user为样例，实际使用需进行更改
