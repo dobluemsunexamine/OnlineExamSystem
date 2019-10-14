@@ -1,19 +1,22 @@
 .container{
-    width: 700px;
+    width: 750px;
     margin: 100px auto;
-    padding: 50px;
+    /* padding: 50px; */
     background-color: #fff;
     overflow: hidden;
 }
 .pic{
     float: left;
-    margin-right: 20px;
+    padding: 80px 20px;
+    background-color: rgba(243, 243, 243, 0.788);
 }
 .pic img{
-    width: 350px;
+    width: 300px;
 }
 .signInBox{
     float: left;
+    height: 100%;
+    padding: 30px 50px;
 }
 .formHeader{
     overflow: hidden;
