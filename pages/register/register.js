@@ -125,6 +125,7 @@ $(document).ready(function(){
                     username:$("#username").val(),
                     password:$("#password").val(),
                     number:$("#number").val(),
+                    name:$("name").val,
                 },
                 success:function(data){
                     if(data.success){
