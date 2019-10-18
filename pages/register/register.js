@@ -4,7 +4,28 @@ $(document).ready(function(){
         if(username.value.match(/^[a‐zA‐Z]\w{5,17}$/)!=null){
             $("#usernameFeedback").html("");
             $("#usernameFeedback").parent().css("box-shadow","0 0 3px 3px rgba(112, 157, 255)");
-            submitJudge=1;
+            
+            $.ajax({
+                type:"POST",
+                url:"register.html",
+                dataType:"json",
+                data:{
+                    username:$("#username").val()
+                },
+                success:function(data){
+                    if(data.success){
+                        submitJudge=1;
+                    }
+                    else{
+                        $("#usernameFeedback").html("用户名不可用");
+                        $("#usernameFeedback").parent().css("box-shadow","0 0 3px 3px rgba(255, 124, 124)");
+                        submitJudge=0;
+                    }
+                },
+                error:function(jqXHR){
+                    alert("出错："+jqXHR.status);
+                }
+            });
         }
         else{
             $("#usernameFeedback").html("用户名为6-18位，字母开头，只能包含字母、数字和下划线");
@@ -16,7 +37,28 @@ $(document).ready(function(){
         if(password.value.match(/^[^@/\\%]{6,18}$/)!=null){
             $("#passwordFeedback").html("");
             $("#passwordFeedback").parent().css("box-shadow","0 0 3px 3px rgba(112, 157, 255)");
-            submitJudge=1;
+
+            $.ajax({
+                type:"POST",
+                url:"register.html",
+                dataType:"json",
+                data:{
+                    password:$("#password").val()
+                },
+                success:function(data){
+                    if(data.success){
+                        submitJudge=1;
+                    }
+                    else{
+                        $("#passwordFeedback").html("密码不可用");
+                        $("#passwordFeedback").parent().css("box-shadow","0 0 3px 3px rgba(255, 124, 124)");
+                        submitJudge=0;
+                    }
+                },
+                error:function(jqXHR){
+                    alert("出错："+jqXHR.status);
+                }
+            });
         }
         else{
             $("#passwordFeedback").html("密码为6-18位，不可包含@/\%四个符号");
@@ -41,6 +83,28 @@ $(document).ready(function(){
             $("#numberFeedback").html("");
             $("#numberFeedback").parent().css("box-shadow","0 0 3px 3px rgba(112, 157, 255)");
             submitJudge=1;
+
+            $.ajax({
+                type:"POST",
+                url:"register.html",
+                dataType:"json",
+                data:{
+                    number:$("#number").val(),
+                },
+                success:function(data){
+                    if(data.success){
+                        submitJudge=1;
+                    }
+                    else{
+                        $("#numberFeedback").html("学号不可用");
+                        $("#numberFeedback").parent().css("box-shadow","0 0 3px 3px rgba(255, 124, 124)");
+                        submitJudge=0;
+                    }
+                },
+                error:function(jqXHR){
+                    alert("出错："+jqXHR.status);
+                }
+            });
         }
         else{
             $("#numberFeedback").html("请正确填写学号");
@@ -64,12 +128,7 @@ $(document).ready(function(){
                 },
                 success:function(data){
                     if(data.success){
-                        window.open("../indexStu/indexStu.html");
-                    }
-                    else{
-                        $("#usernameFeedback").html("用户名不可用");
-                        $("#passwordFeedback").html("密码不可用");
-                        $("#numberFeedback").html("学号不可用");
+                        alert("请等待审核");
                     }
                 },
                 error:function(jqXHR){
