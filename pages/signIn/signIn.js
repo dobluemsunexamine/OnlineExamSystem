@@ -6,12 +6,17 @@ $(document).ready(function(){
             dataType:"json",
             data:{
                 username:$("#username").val(),
-                password:$("password").val(),
+                password:$("#password").val(),
             },
             success:function(data){
                 if(data.success){
-                    window.open("../index/index.html");
-                }
+                    if(status==0){
+                        alert("请耐心等待审核");
+                    }
+                    else{
+                        window.open("../index/index.html");
+                    }
+                }        
                 else{
                     $("#usernameFeedback").html("用户名未注册");
                     $("#passwordFeedback").html("密码错误");
