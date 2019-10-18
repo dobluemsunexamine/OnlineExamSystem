@@ -1,0 +1,146 @@
+*{
+    font-family: FontAwesome;
+}
+html{
+    /* height: 100%; */
+    background-color: #fff;
+}
+.clear{
+    clear: both;
+}
+/* header */
+.header{
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px 2px rgb(187, 187, 187);
+    background-color: #fff;
+}
+.logo{
+    float: left;
+    width: 200px;
+}
+.logo img{
+    width: 200px;
+}
+.usernameContainer{
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}
+.usernameContainer #username{
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+.usernameContainer:hover .menu{
+    display: block;
+}
+.usernameContainer .menu{
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    display: none;
+    padding: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.usernameContainer .menu a{
+    color: #666;
+    font-size: 14px;
+}
+.usernameContainer .menu span{
+    margin: 5px;
+    line-height: 24px;
+}
+.container{
+    height: 100%;
+    overflow: hidden;
+}
+/* 侧栏 */
+.sideBar{
+    float: left;
+    /* padding: 0 20px; */
+    height: 100%;
+    /* width: 20%; */
+    background-color: #fff;
+}
+.secondarySideBar{
+    padding: 30px 0;
+    border-bottom: 2px solid rgb(209, 209, 209);
+}
+.secondarySideBar a{
+    display: block;
+    margin: 5px 20px 5px 0;
+    padding: 5px 20px;
+    color: #666;
+    font-size: 16px;
+}
+.secondarySideBar .back:hover{
+    color: #333;
+}
+.secondarySideBar .now{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar .itemGroup:hover{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar a span{
+    margin-right: 20px;
+}
+.paperMassage{
+    margin: 50px 30px;
+    font-size: 14px;
+    color: #666;
+}
+.paperMassage div{
+    margin: 10px 0;
+}
+.paperMassage span{
+    color: #145fb4;
+}
+/* 答题区 */
+.question{
+    float: left;
+    background-color: #fff;
+    width: 75%;
+    /* padding: 0 50px; */
+    margin-left: 20px;
+}
+.question #title{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.question #details{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+#editor{
+    margin: 20px 0;
+}
+.button{
+    padding: 50px 0;
+    height: 100px;
+}
+.question button{
+    display: block;
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1b75dc;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蓝旭工作室答题系统</title>
+    <link rel="stylesheet" href="./answerSheetStu.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/pagesAssets/initialize.css" type="text/css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./answerSheetStu.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="#">
+            <div class="logo">
+                <img src="../../assets/imgs/logo.jpg" alt="">
+            </div>
+        </a>
+        <div class="usernameContainer">
+            <span id="username">USERNAME</span>
+            <div class="menu">
+                <a href="#">
+                    <span>&#xf19c</span>
+                    <span>个人中心</span>
+                </a>
+                <a href="#">
+                    <span>&#xf08b</span>
+                    <span>登出</span>
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="container">
+        <div class="sideBar">
+            <div class="secondarySideBar">
+                <a href="#" class="back">
+                    <span>&#xf104</span>题目集列表
+                </a>
+                <a href="#" class="itemGroup now">
+                    <span>&#xf022</span>题目列表
+                </a>
+                <a href="#" class="itemGroup">
+                    <span>&#xf162</span>排名
+                </a>
+            </div>
+            <div class="paperMassage">
+                <div><span>&#xf21d</span>作者：<span id="author">xx</span> </div>
+                <div>开始时间：<span id="beginTime"> 2018/9/29 09:43:00</span> </div>
+                <div>答题时长：<span id="answerTime"> 1440分钟</span></div>
+                <div>结束时间：<span id="endTime"> 2018/10/11 09:43:00</span></div>
+                <div class="timeBar"></div>
+            </div>
+        </div>
+        <div class="question">
+            <div id="title">7-1 一元多项式的乘法与加法运算<span id="totalPoint"> (20 分)</span></div>
+            <div id="details">题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br></div>
+            <div id="editor"></div>
+            <div class="button">
+                <button id="submitButton">提交</button>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    
+
+    <script src="../../assets/wangEditor-3.1.1/release/wangEditor.min.js"></script>
+    <script src="./answerSheetStu.js"></script>
+</body>
+</html>
