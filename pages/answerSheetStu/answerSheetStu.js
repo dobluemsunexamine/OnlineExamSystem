@@ -9,6 +9,7 @@ editor.customConfig.fontNames = [
     'Tahoma',
     'Verdana'
 ];
+editor.customConfig.pasteFilterStyle = false;   
 //上传图片
 // 配置服务器端地址，其中/upload是上传图片的服务器端接口
 editor.customConfig.uploadImgServer = '/upload';
