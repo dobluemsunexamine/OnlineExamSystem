@@ -1,0 +1,81 @@
+body{
+    background-color:#eff4f7;
+}
+/* 侧栏 */
+.sideBar{
+    float: left;
+    height: 100%;
+    width: 250px;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.secondarySideBar{
+    padding: 30px 0;
+}
+.secondarySideBar a{
+    display: block;
+    margin: 5px 20px 5px 0;
+    padding: 5px 50px 5px 20px;
+    color: #666;
+    font-size: 16px;
+}
+.secondarySideBar .back:hover{
+    color: #333;
+}
+.secondarySideBar .now{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar .itemGroup:hover{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar a span{
+    margin-right: 20px;
+}
+/* 个人中心 */
+.profileBox{
+    flex: 1;
+    overflow: auto;
+    color: #666;
+    font-size: 14px;
+}
+.profile{
+    margin: 16px 20px;
+    background-color: #fff;
+    border: 1px solid rgb(202, 202, 202);
+}
+.title{
+    padding: 10px 16px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    background-color: rgb(240, 240, 240);
+}
+.profile .row{
+    display: flex;
+    padding: 16px;
+}
+.profile .row div{
+    float: left;
+}
+.profile .row .col-2{
+    flex: 1;
+}
+.profile .row .col-10{
+    flex: 5;
+}
+.profile .row button{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(255, 81, 81);
+    background-color: #fff;
+    border: 1px solid rgb(255, 81, 81);
+    box-shadow: 0 0 2px 2px rgb(255, 117, 117);
+    cursor: pointer;
+}

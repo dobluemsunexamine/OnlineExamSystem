@@ -3,14 +3,14 @@ body{
 }
 .container{
     width: 750px;
-    margin: 100px auto;
+    margin: 50px auto;
     /* padding: 50px; */
     background-color: #fff;
     overflow: hidden;
 }
 .pic{
     float: left;
-    padding: 120px 20px;
+    padding: 150px 20px;
     background-color: rgba(243, 243, 243, 0.788);
 }
 .pic img{

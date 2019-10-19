@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>蓝旭工作室答题系统</title>
-    <link rel="stylesheet" href="./answerSheetStu.css" type="text/css">
+    <link rel="stylesheet" href="./publish.css" type="text/css">
     <link rel="stylesheet" href="../../assets/pagesAssets/initialize.css" type="text/css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="./answerSheetStu.js"></script>
+    <script src="./publish.js"></script>
 </head>
 <body>
     <div class="header">
@@ -35,39 +35,53 @@
     <div class="container">
         <div class="sideBar">
             <div class="secondarySideBar">
-                <a href="#" class="back">
-                    <span>&#xf104</span>题目集列表
+                <a href="#" class="questionListTitle itemGroup">
+                    <span>&#xf022</span>题目集列表
                 </a>
-                <a href="#" class="itemGroup now">
-                    <span>&#xf022</span>题目列表
+                <a href="#" class="questionListTitle itemGroup now">
+                    <span>&#xf0ee</span>试题编辑发布
                 </a>
-                <a href="#" class="itemGroup">
-                    <span>&#xf162</span>排名
+                <a href="#" class="questionListTitle itemGroup">
+                    <span>&#xf2bb</span>成员管理
                 </a>
-            </div>
-            <div class="paperMassage">
-                <div><span>&#xf21d</span>作者：<span id="author">xx</span> </div>
-                <div>开始时间：<span id="beginTime"> 2018/9/29 09:43:00</span> </div>
-                <div>答题时长：<span id="answerTime"> 1440分钟</span></div>
-                <div>结束时间：<span id="endTime"> 2018/10/11 09:43:00</span></div>
-                <div class="timeBar"></div>
             </div>
         </div>
         <div class="questionContainer">
-            <div class="questionTitle">第一次练习</div>
+            <div class="basic">
+                <div class="problemTitle">基本信息</div>
+                <div class="row">
+                    <div class="col_1">作业名称:</div>
+                    <div class="col_2">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col_1">作业描述:</div>
+                    <div class="col_2">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col_1">开始时间:</div>
+                    <div class="col_2">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col_1">结束时间:</div>
+                    <div class="col_2">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
             <ul class="subtitle">
                 <li>&#xf046 选择题</li>
                 <li>A. 判断题</li>
                 <li class="subtitleNow">&#xf121 简答题</li>
+                <li>&#xf0ee</li>
             </ul>
             <div class="question3">
-                <div id="title">7-1 一元多项式的乘法与加法运算<span id="totalPoint"> (20 分)</span></div>
-                <div id="details">题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br>题目<br></div>
-                <div id="editor"></div>
-                <div class="button">
-                    <button id="submitButton">提交</button>
-                </div>
-                <div class="clear"></div>
+
             </div>
         </div>
         

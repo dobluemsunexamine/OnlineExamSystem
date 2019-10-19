@@ -5,8 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>蓝旭工作室答题系统</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/pagesAssets/initialize.css" type="text/css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
-    hi~~~~
+    <!-- header -->
+    <div class="header">
+        <a href="#">
+            <div class="logo">
+                <img src="../../assets/imgs/logo.jpg" alt="">
+            </div>
+        </a>
+        <div class="usernameContainer">
+            <span id="username">&#xf2be</span>
+            <div class="menu">
+                <a href="#">
+                    <span>&#xf19c</span>
+                    <span>个人中心</span>
+                </a>
+                <a href="#">
+                    <span>&#xf08b</span>
+                    <span>登出</span>
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="sideBar">
+            <div class="secondarySideBar">
+                <a href="#" class="questionListTitle itemGroup now">
+                    <span>&#xf022</span>题目集列表
+                </a>
+            </div>
+        </div>
+        <div class="questionListBox">
+            <div class="questionList">
+                <div class="problemSetList">
+                    <div class="mainRow">
+                        <span class="titleIcon">&#xf26c</span>
+                        <a id="problemTitle" href="#">第三次练习</a>
+                        <div class="completionStatus">未完成</div>
+                    </div>
+                    <div class="secondRow">
+                        <span>&#xf007</span>
+                        <span id="author">author</span>
+                    </div>
+                </div>
+                <div class="problemSetList">
+                    <div class="mainRow">
+                        <span class="titleIcon">&#xf26c</span>
+                        <a id="problemTitle" href="#">第二次练习</a>
+                        <div class="completionStatus">待批改</div>
+                    </div>
+                    <div class="secondRow">
+                        <span>&#xf007</span>
+                        <span id="author">author</span>
+                    </div>
+                </div>
+                <div class="problemSetList">
+                    <div class="mainRow">
+                        <span class="titleIcon">&#xf26c</span>
+                        <a id="problemTitle" href="#">第一次练习</a>
+                        <div class="completionStatus">已批改</div>
+                    </div>
+                    <div class="secondRow">
+                        <span>&#xf007</span>
+                        <span id="author">author</span>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
 </body>
 </html>

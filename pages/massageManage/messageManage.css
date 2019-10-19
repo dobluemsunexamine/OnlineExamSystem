@@ -1,0 +1,123 @@
+body{
+    background-color:#eff4f7;
+}
+/* 侧栏 */
+.sideBar{
+    float: left;
+    height: 100%;
+    width: 250px;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.secondarySideBar{
+    padding: 30px 0;
+}
+.secondarySideBar a{
+    display: block;
+    margin: 5px 20px 5px 0;
+    padding: 5px 50px 5px 20px;
+    color: #666;
+    font-size: 16px;
+}
+.secondarySideBar .now{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar .itemGroup:hover{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar a span{
+    margin-right: 20px;
+}
+
+/* messageLists */
+.messageListBox{
+    flex: 1;
+    overflow: auto;
+}
+.messageLists{
+    margin: 16px 8px;
+    font-size: 14;
+    color: #666;
+}
+.messageLists .title ul{
+    display: flex;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    background-color: #fff;
+}
+.messageLists .title li{
+    border-right: 1px solid rgb(194, 194, 194);
+    flex-grow: 1;
+    text-align: center;
+}
+#examineTab{
+    border: none;
+}
+.listGroup ul{
+    display: flex;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    background-color: #fff;
+}
+.listGroup li{
+    flex-grow: 1;
+    text-align: center;
+}
+.Unaudited{
+    cursor: pointer;
+}
+/* messageDetail */
+#messageDetail{
+    position: absolute;
+    display:none;
+    width:300px;
+    padding: 30px 80px;
+    border-radius: 10px;
+    margin-left: -230px;
+    left:50%;
+    top:20%;
+    z-index:11;
+    background:#fff; 
+    color: #333;
+}
+#messageLayer{
+    position: absolute;
+    display:none;
+    left:0;
+    top:0;
+    z-index:10;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0);
+    -moz-opacity: 0.6;
+    opacity:.60;
+    filter: alpha(opacity=60);/* 只支持IE6、7、8、9 */
+}
+.details span{
+    display: block;
+    margin: 20px 10px;
+}
+.details select{
+    width: 250px;
+    height: 30px;
+    outline: none;
+}
+#messageDetail button{
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin: 30px auto 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #1b75dc;
+}

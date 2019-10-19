@@ -85,17 +85,17 @@ body{
 .formCheck{
     margin-bottom: 20px;
 }
-.forgetPassword{
+#forgetPassword{
     overflow: hidden;
     margin-bottom: 30px;
 }
-.forgetPassword span{
+#forgetPassword span{
     display: block;
     float: right;
     font-size: 14px;
     color: #3a68c6;
 }
-.forgetPassword span:hover{
+#forgetPassword span:hover{
     text-decoration: underline;
     color: #21407e;
     cursor: pointer;

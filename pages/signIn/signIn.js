@@ -27,4 +27,7 @@ $(document).ready(function(){
             }
         })
     });
+    $("#forgetPassword").click(function(){
+        alert("请联系管理员");
+    });
 });

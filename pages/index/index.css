@@ -1,0 +1,88 @@
+body{
+    background-color:#eff4f7;
+}
+/* 侧栏 */
+.sideBar{
+    float: left;
+    /* padding: 0 20px; */
+    height: 100%;
+    width: 250px;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.secondarySideBar{
+    padding: 30px 0;
+}
+.secondarySideBar a{
+    display: block;
+    margin: 5px 20px 5px 0;
+    padding: 5px 50px 5px 20px;
+    color: #666;
+    font-size: 16px;
+}
+.secondarySideBar .now{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar .itemGroup:hover{
+    border-radius: 0 20px 20px 0;
+    background-color: #1b75dc;
+    color: #fff;
+    font-weight: bold;
+}
+.secondarySideBar a span{
+    margin-right: 20px;
+}
+/* questionList */
+.questionListBox{
+    flex: 1;
+    overflow: auto;
+}
+.questionList{
+    margin: 16px 8px;
+}
+.titleIcon{
+    font-size: 16px;
+    color: #666;
+}
+.problemSetList{
+    margin: 16px 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 1px #a1c9f7;
+    background-color: #fff;
+}
+.problemSetList:hover{
+    box-shadow: 2px 2px 1px 1px #2e7bd3;
+}
+.mainRow span{
+    margin: 0 10px;
+}
+.mainRow a{
+    color: #458ddf;
+}
+#problemTitle{
+    flex: 1;
+}
+.completionStatus{
+    float: right;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #1b75dc;
+    font-size: 14px;
+    color: #fff;
+    
+}
+.secondRow{
+    margin-left: 10px;
+    text-align: left;
+}
+.secondRow span{
+    margin-right: 5px;
+    font-size: 12px;
+}
+

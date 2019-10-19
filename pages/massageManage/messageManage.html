@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蓝旭工作室答题系统</title>
+    <link rel="stylesheet" href="./messageManage.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/pagesAssets/initialize.css" type="text/css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./messageManage.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="#">
+            <div class="logo">
+                <img src="../../assets/imgs/logo.jpg" alt="">
+            </div>
+        </a>
+        <div class="usernameContainer">
+            <span id="username">&#xf2be</span>
+            <div class="menu">
+                <a href="#">
+                    <span>&#xf19c</span>
+                    <span>个人中心</span>
+                </a>
+                <a href="#">
+                    <span>&#xf08b</span>
+                    <span>登出</span>
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="sideBar">
+            <div class="secondarySideBar">
+                <a href="#" class="questionListTitle itemGroup">
+                    <span>&#xf022</span>题目集列表
+                </a>
+                <a href="#" class="questionListTitle itemGroup">
+                    <span>&#xf0ee</span>试题编辑发布
+                </a>
+                <a href="#" class="questionListTitle itemGroup now">
+                    <span>&#xf2bb</span>成员管理
+                </a>
+            </div>
+        </div>
+        <div class="messageListBox">
+            <div class="messageLists">
+                <div class="title">
+                    <ul>
+                        <li>用户名</li>
+                        <li>姓名</li>
+                        <li>学号</li>
+                        <li id="examineTab">审核情况</li>
+                    </ul>
+                </div>
+                <div class="listGroup Unaudited">
+                    <ul>
+                        <li>xx</li>
+                        <li>xx</li>
+                        <li class="userId">xxxx</li>
+                        <li>待审核</li>
+                    </ul>
+                </div>
+                <div class="listGroup">
+                    <ul>
+                        <li>xx</li>
+                        <li>xx</li>
+                        <li>xxxx</li>
+                        <li>已审核</li>
+                    </ul>
+                </div>
+                <div class="listGroup">
+                    <ul>
+                        <li>xx</li>
+                        <li>xx</li>
+                        <li>xxxx</li>
+                        <li>不通过</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="messageLayer"></div>
+    <div id="messageDetail">
+        <div class="details">
+            <span>&#xf2bb 身份：</span>
+            <form action="">
+                <select name="" id="status">
+                    <option value="0">萌新</option>
+                    <option value="1">正式成员</option>
+                    <option value="2">管理员</option>
+                </select>
+            </form>
+        </div>
+        <div class="details">
+            <span>&#xf058 审核状态:</span>
+            <form action="">
+                <select name="" id="available">
+                    <option value="1">通过</option>
+                    <option value="-1">不通过</option>
+                </select>
+            </form>
+        </div>
+        <button id="submitButton">提交</button>
+    </div>
+</body>
+</html>

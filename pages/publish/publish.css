@@ -1,8 +1,6 @@
 html{
-    /* height: 100%; */
-    background-color: #fff;
+    background-color: #eff4f7;
 }
-
 .container{
     display: flex;
     height: 100%;
@@ -12,6 +10,7 @@ html{
 .sideBar{
     float: left;
     height: 100%;
+    width: 250px;
     border: 1px solid rgb(212, 212, 212);
     margin-top: 16px;
     border-radius: 10px;
@@ -19,7 +18,6 @@ html{
 }
 .secondarySideBar{
     padding: 30px 0;
-    border-bottom: 2px solid rgb(209, 209, 209);
 }
 .secondarySideBar a{
     display: block;
@@ -57,6 +55,35 @@ html{
 .paperMassage span{
     color: #145fb4;
 }
+/* 基本信息 */
+.basic{
+    background-color: #fff;
+    padding: 20px;
+    color: #666;
+}
+.problemTitle{
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+.basic .row{
+    display: flex;
+    padding: 16px;
+}
+.basic .row input{
+    width: 300px;
+    height: 22px;
+    border: 1px solid #999;
+}
+.basic .row div{
+    float: left;
+}
+.basic .row .col_1{
+    flex: 1;
+}
+.basic .row .col_2{
+    flex: 5;
+}
 /* 答题区 */
 .questionContainer{
     float: left;
@@ -74,6 +101,7 @@ html{
     margin-top: 10px;
     border-bottom: 1px solid rgb(209, 209, 209);
     box-sizing: border-box;
+    background-color: #fff;
 }
 .subtitle li{
     float: left;
@@ -100,33 +128,5 @@ html{
     border-left: 1px solid rgb(209, 209, 209);
     margin-bottom: -1px;
     box-sizing: border-box;
-}
-.question3 #title{
-    margin: 30px 0;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
-.question3 #details{
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f7f7f7;
-}
-#editor{
-    margin: 20px 0;
-}
-.button{
-    padding: 50px 0;
-    height: 100px;
-}
-.question3 button{
-    display: block;
-    width: 60px;
-    height: 30px;
-    margin: 0 auto;
-    border-radius: 10px;
-    color: #fff;
-    background-color: #1b75dc;
 }
 
